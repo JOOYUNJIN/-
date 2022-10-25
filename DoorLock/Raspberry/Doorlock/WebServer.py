@@ -8,7 +8,7 @@ from DeviceManager import doorOpen
 app = Flask(__name__)
 
 def saveCSV(user, csvPath='output.csv'):
-	f = open(csvPath, 'a', encoding='utf-8', newline='')
+	f = open(csvPath, 'a', encoding='utf-8', newline='')//ㅓ
 	wr = csv.writer(f)
 	wr.writerow([datetime.now().strftime('%Y-%m-%d %H:%M:%S'), user])
 	f.close()
